@@ -14,17 +14,17 @@ let pessoa = [{
     sexo: "masc",
     profissao: "suporte",
     nacionalidade: "Brasileira",
-    
+
 
 },
 {
 
     nome: "Rita",
-    idade: 24,
+    idade: 34,
     sexo: "fem",
     profissao: "supo",
-    nacionalidade: "Brasileira",
-    
+    nacionalidade: "Brasileir",
+
 
 },
 {
@@ -33,8 +33,8 @@ let pessoa = [{
     idade: 2,
     sexo: "masc",
     profissao: "escola",
-    nacionalidade: "Holandesa-brasileira",
-   
+    nacionalidade: "Brasileira",
+
 
 },
 {
@@ -42,7 +42,28 @@ let pessoa = [{
     idade: 2,
     sexo: "feminino",
     profissao: "diarista",
-    nacionalidade: "Brasileira",
-    
+    nacionalidade: "Brasilei",
+
 }]
 
+for(i=0;i < pessoa.length;i++){
+
+if (pessoa[i].nacionalidade == "Brasileira" && pessoa[i].idade >= 18) {
+    console.log(`Parabens ${pessoa[i].nome} voce é do brasil e tem idade acima de 18 e merece nota 10`)
+
+
+} else if (pessoa[i].nacionalidade == "Brasileira" && pessoa[i].idade < 18) {
+
+    console.log(`${pessoa[i].nome} voce é brasileiro mas não tem idade acima de 18`)
+
+} else if (pessoa[i].nacionalidade !== "Brasileira" && pessoa[i].idade >= 18) {
+
+        console.log(`${pessoa[i].nome} voce não é brasileiro mas, tem idade acima de 18`)
+    
+
+} else {
+
+    console.log(`${pessoa[i].nome} não tem idade e não é do brasil`)
+}
+
+}
