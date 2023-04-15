@@ -4,9 +4,9 @@
 */
 
 
-let number = 3
-let resto = number % 2
-if(resto == 0){
+let number = 4
+
+if(number % 2 == 0){
     console.log("Numero é PAR")
 
 }else{

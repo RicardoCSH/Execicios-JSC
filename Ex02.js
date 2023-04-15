@@ -5,7 +5,7 @@
 
 let pessoa ={
     name: 'Ricardo',
-    country: 'Brasileio'
+    country: 'Brasileiro'
 
 }
 

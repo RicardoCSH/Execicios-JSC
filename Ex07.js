@@ -6,11 +6,21 @@
 */
 
 
-let number = 3
-let resto = number % 2
-if(resto == 0 || number ==2){
-    console.log("Numero é PAR")
+let number = 27
 
-}else{
-    console.log("Numero é IMPAR")
+if (number % 2 === 0) {
+
+    if (number % 5 === 0)console.log("Esse numero é par e divisivel por 5")
+    else console.log("O numero é par e Não é divisivel por 5")
+
+}else {
+
+    for (let i = 2; i < number; i++)
+        if (number % i === 0) {
+            console.log("Ele é impar, mas não é primo")
+            break
+        } else {
+            if (i === number -1) 
+                console.log("Ele é um numero primo")           
+        }
 }

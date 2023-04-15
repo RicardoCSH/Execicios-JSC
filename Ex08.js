@@ -7,3 +7,21 @@
 
 */
 
+let numbers1 = 35
+let numbers2 = 3
+let numbers3 = 9
+let numbers4 = 11
+
+
+if (numbers1 % 2 ===0 && numbers2 % 2 ===0 && numbers3 % 2 ===0 && numbers4 % 2 ===0){
+
+console.log("Todos são pares")
+
+
+}else if (numbers1 % 2 !==0 && numbers2 % 2 !==0 && numbers3 % 2 !==0 && numbers4 % 2 !==0){
+
+  console.log("Todos são Impares")
+
+}else{
+  console.log("Tudo misturado")
+}
