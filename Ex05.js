@@ -14,7 +14,7 @@ let pessoa = [{
     sexo: "masc",
     profissao: "suporte",
     nacionalidade: "Brasileira",
-    nota: 0
+    
 
 },
 {
@@ -24,7 +24,7 @@ let pessoa = [{
     sexo: "fem",
     profissao: "supo",
     nacionalidade: "Brasileira",
-    nota: 0
+    
 
 },
 {
@@ -34,7 +34,7 @@ let pessoa = [{
     sexo: "masc",
     profissao: "escola",
     nacionalidade: "Holandesa-brasileira",
-    nota: 0
+   
 
 },
 {
@@ -43,55 +43,6 @@ let pessoa = [{
     sexo: "feminino",
     profissao: "diarista",
     nacionalidade: "Brasileira",
-    nota: 0
+    
 }]
-
-for (let i = 0; i < pessoa.length; i++) {
-
-    if (pessoa[i].idade >= 18) {
-        pessoa[i].nota += 5
-
-
-    }else{
-        console.log("Não há idade suficiente")
-    }
-
-    if (pessoa[i].nacionalidade === "Brasileira") {
-        pessoa[i].nota += 5
-    }else{
-        console.log("Não é brasileiro")
-    }
-
-        switch (pessoa[i].nota) {
-            case 0:
-                console.log("Reprovado")
-                break
-
-            case 1:
-                console.log("Reprovado estudar muito")
-                break
-            case 2:
-                console.log("Reprovado mais esforco")
-                break
-            case 3:
-                console.log(`${pessoa[i].nome}:Reprovado tente novamente um pouco mais`)
-
-            case 5:
-                console.log(`${pessoa[i].nome}:${pessoa[i].nota} faltou pouco`)
-
-                break
-
-            case 10:
-                console.log(`${pessoa[i].nome}:${pessoa[i].nota} Otimo aprovadão`)
-
-                break
-
-            default:
-                console.log(`nota ${pessoa[i].nota}: Verifique seus dados novamente`)
-                break
-
-        }
-
-
-    }
 

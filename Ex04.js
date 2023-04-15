@@ -1,6 +1,13 @@
-let number1 = 3
+
+/* 
+
+[ ] Faça um programa que receba 3 números inteiros, e deve imprimir, qual é o maior, qual é o menor.
+
+*/
+
+let number1 = 1
 let number2 = 4
-let number3 = 6
+let number3 = 2
 
 if(number1 >= number2 && number3){
     console.log(`Numero: ${number1} é maior que todos`)
