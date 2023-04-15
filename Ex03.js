@@ -7,11 +7,14 @@
 
 */
 
-let number = 4
-const sorteio = console.log(Math.random())
+
+const number = Math.floor(Math.random() * 11);
+
+const sorteio = Math.floor(Math.random() * 11);
 
 
-if(number != (sorteio)){
+
+if(number === (sorteio)){
     console.log("Voce é o ganhador")
     console.log(`${number} numero sorteado: ${sorteio}`)
 
@@ -19,4 +22,5 @@ if(number != (sorteio)){
 else{
     console.log("Você não ganhou nada")
     console.log(sorteio)
+    console.log(number)
 }
